@@ -43,6 +43,7 @@ public class Interface_login extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Iniciar sesion");
+        jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 51), 2, true));
 
         jPasswordField1.setBackground(new java.awt.Color(31, 65, 169));
         jPasswordField1.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
@@ -55,6 +56,7 @@ public class Interface_login extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Registrarme");
+        jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 102, 0), 2, true));
 
         javax.swing.GroupLayout panel_loginLayout = new javax.swing.GroupLayout(panel_login);
         panel_login.setLayout(panel_loginLayout);
@@ -86,7 +88,7 @@ public class Interface_login extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton2)
-                .addContainerGap(109, Short.MAX_VALUE))
+                .addContainerGap(123, Short.MAX_VALUE))
         );
 
         getContentPane().add(panel_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, 360, 390));
