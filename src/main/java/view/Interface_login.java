@@ -1,4 +1,4 @@
-package vista;
+package view;
 public class Interface_login extends javax.swing.JFrame {
     public Interface_login() {
         initComponents();
