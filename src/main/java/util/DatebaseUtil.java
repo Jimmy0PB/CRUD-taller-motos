@@ -17,31 +17,17 @@ public class DatebaseUtil {
     //Cerrar conexion
     public static void closeConnection(Connection connection, PreparedStatement preparedStatement, ResultSet resultSet) {
         try {
+            if(connection != null){
+                connection.close();
+            }
+            if (preparedStatement != null) {
+                preparedStatement.close();
+            }
             if (resultSet != null) {
                 resultSet.close();
             }
         } catch (SQLException e) {
-            // Manejo de errores
-            e.printStackTrace();
-            
-        }
-
-        try {
-            if (preparedStatement != null) {
-                preparedStatement.close();
-            }
-        } catch (SQLException e) {
-            // Manejo de errores
-            e.printStackTrace();
-        }
-
-        try {
-            if (connection != null) {
-                connection.close();
-            }
-        } catch (SQLException e) {
-            // Manejo de errores
-            e.printStackTrace();
+            System.out.println(e);
         }
     }
 }

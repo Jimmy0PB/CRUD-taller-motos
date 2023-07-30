@@ -36,7 +36,6 @@ public class Interface_login extends javax.swing.JFrame {
         txt_username.setBackground(new java.awt.Color(31, 65, 169));
         txt_username.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         txt_username.setForeground(new java.awt.Color(255, 255, 255));
-        txt_username.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_username.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
 
         btnLogin.setBackground(new java.awt.Color(0, 153, 51));
@@ -53,7 +52,6 @@ public class Interface_login extends javax.swing.JFrame {
         txt_password.setBackground(new java.awt.Color(31, 65, 169));
         txt_password.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         txt_password.setForeground(new java.awt.Color(255, 255, 255));
-        txt_password.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_password.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
 
         jButton2.setBackground(new java.awt.Color(204, 102, 0));
@@ -88,13 +86,13 @@ public class Interface_login extends javax.swing.JFrame {
             .addGroup(panel_loginLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addGap(34, 34, 34)
-                .addComponent(txt_username, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txt_password, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel2)
                 .addGap(12, 12, 12)
+                .addComponent(txt_username, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(txt_password, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(22, 22, 22)
                 .addComponent(btnLogin)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton2)
@@ -116,16 +114,6 @@ public class Interface_login extends javax.swing.JFrame {
         user_Controller.loginUser(txt_username.getText(), txt_password.getText(), lbl_warnings);
     }//GEN-LAST:event_btnLoginActionPerformed
     public static void main(String args[]) {
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Interface_login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
         java.awt.EventQueue.invokeLater(() -> {
             new Interface_login().setVisible(true);
         });

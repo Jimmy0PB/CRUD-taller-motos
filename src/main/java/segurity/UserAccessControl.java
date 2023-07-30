@@ -2,11 +2,11 @@ package segurity;
 import dao.UserDAO;
 import model.User;
 public class UserAccessControl {
-    public boolean userAuthenticate(String userName, String Password){
+    public boolean userAuthenticate(String userName, String password){
         UserDAO userDAO = new UserDAO();
         User user = userDAO.getUserByUserName(userName);
         if(user != null){
-            if(user.getUserPassword().equals(Password)){
+            if(user.getUserPassword().equals(password)){
                 return true;
             }
         }
